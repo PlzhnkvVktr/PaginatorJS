@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pagination</title>
+  </head>
+  <body>
+    <div id="modal__createPost" class="modal">
+      <div class="modal__content">
+        <span class="close">&times;</span>
+        <p>Title</p>
+        <textarea></textarea>
+        <p>Body</p>
+        <textarea></textarea>
+        <button id="sendBtn">Send</button>
+      </div>
+    </div>
+    <div id="modal__openPost" class="modal">
+      <div id="modalPostContainer" class="modal__content">
+        <h5 id="postTitle"></h5>
+        <p id="postBody"></p>
+      </div>
+    </div>
+    <div class="container">
+    <h1 class="title">Test App</h1>
+    <div class="searh__container">
+      <input 
+        id="inp"
+        value=""
+        type="text" 
+        class="searh__input"
+        placeholder="Searh"
+      />
+      <button id="create_post">Create post</button>
+    </div>
+    <div class="posts"></div>
+    <div class="pagination"></div>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
+</html>
